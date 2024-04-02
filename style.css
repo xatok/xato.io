@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'CustomFontHeader';
+    src: url('font_header.woff2') format('woff2');
+}
+
+body {
+    background-color: #f7ebe5;
+    color: black;
+    font-family: 'CustomFont', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #416d19;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2e4b10;
+    text-decoration: underline;
+}
+
+strong, h1, h2, h3, h4, h5, h6 {
+    font-family: 'CustomFontHeader', Arial, sans-serif;
+}
+
+.accent {
+    background-color: #f2c18d;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5c287;
+    color: #416d19;
+}
+
+.accent-variation {
+    background-color: #e5c287;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f2c18d;
+    color: #416d19;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    body, h1, h2, h3, h4, h5, h6 {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    body {
+        max-width: 600px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.25em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.75em;
+    }
+
+    h5 {
+        font-size: 1.5em;
+    }
+
+    h6, strong {
+        font-size: 1.25em;
+    }
+}
