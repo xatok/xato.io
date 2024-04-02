@@ -8,8 +8,11 @@
     src: url('font_header.woff2') format('woff2');
 }
 
-body {
+html {
     background-color: #f7ebe5;
+}
+
+body {
     color: black;
     font-family: 'CustomFont', Arial, sans-serif;
     margin: 0;
