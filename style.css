@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'CustomFont';
-    src: url('font.woff2') format('woff2');
+    src: url('Quicksand-SemiBold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'CustomFontHeader';
-    src: url('font_header.woff2') format('woff2');
+    src: url('Quicksand-Bold.woff') format('woff');
 }
 
 html {
