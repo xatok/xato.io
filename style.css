@@ -175,6 +175,8 @@ ul li {
 .download-links a img {
     width: 200px;
     height: auto;
+    max-width: 100%;
+    display: block;
     transition: transform 0.3s;
 }
 
