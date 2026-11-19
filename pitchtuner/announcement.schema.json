@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pitch Tuner announcement",
+  "description": "One announcement at a time, read by the app at launch and shown on the next launch. Anything the app can't read shows nothing.",
+  "type": "object",
+  "required": [
+    "id",
+    "expires",
+    "text"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "description": "Each user sees an id once. Change it for a new announcement; keep it when only fixing the same one.",
+      "type": "string",
+      "minLength": 1
+    },
+    "expires": {
+      "description": "UTC instant after which it no longer shows.",
+      "type": "string",
+      "format": "date-time",
+      "examples": [
+        "2027-02-01T00:00:00Z"
+      ]
+    },
+    "text": {
+      "description": "Keyed by lowercase language code. The user's first matching language wins, else en; with neither, nothing shows.",
+      "type": "object",
+      "required": [
+        "en"
+      ],
+      "propertyNames": {
+        "pattern": "^[a-z]{2,3}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "title",
+          "body"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "body": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "platforms": {
+      "description": "Omit to show on every platform.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "android",
+          "ios"
+        ]
+      }
+    },
+    "minVersion": {
+      "description": "Lowest app version that shows it, inclusive. 2.14 equals 2.14.0.",
+      "type": "string",
+      "pattern": "^[0-9]+(\\.[0-9]+)*$"
+    },
+    "maxVersion": {
+      "description": "Highest app version that shows it, inclusive.",
+      "type": "string",
+      "pattern": "^[0-9]+(\\.[0-9]+)*$"
+    },
+    "url": {
+      "description": "Adds Learn more / Not now, which open it; omit for a single OK. HTTPS on these hosts only, or nothing shows.",
+      "type": "string",
+      "pattern": "^https://(xato\\.io|apps\\.apple\\.com|play\\.google\\.com)([/?#]|$)"
+    }
+  }
+}
