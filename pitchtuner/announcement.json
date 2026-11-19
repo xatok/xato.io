@@ -1,0 +1,15 @@
+{
+  "id": "ios-launch",
+  "platforms": [
+    "android"
+  ],
+  "expires": "2027-02-01T00:00:00Z",
+  "url": "https://apps.apple.com/app/id6826589659",
+  "text": {
+    "en": {
+      "title": "PitchTuner is on iPhone",
+      "body": "The same tuner, now on iPhone and iPad.",
+      "action": "Get it"
+    }
+  }
+}
