@@ -7,9 +7,36 @@
   "url": "https://apps.apple.com/app/id6826589659",
   "text": {
     "en": {
-      "title": "PitchTuner is on iPhone",
-      "body": "The same tuner, now on iPhone and iPad.",
-      "action": "Get it"
+      "title": "Pitch Tuner is on iPhone",
+      "body": "The same tuner, now on iPhone and iPad."
+    },
+    "de": {
+      "title": "Pitch Tuner gibt es jetzt für iPhone",
+      "body": "Derselbe Tuner, jetzt auch auf iPhone und iPad."
+    },
+    "es": {
+      "title": "Pitch Tuner ya está en iPhone",
+      "body": "El mismo afinador, ahora en iPhone y iPad."
+    },
+    "hi": {
+      "title": "Pitch Tuner अब iPhone पर",
+      "body": "वही ट्यूनर, अब iPhone और iPad पर।"
+    },
+    "ja": {
+      "title": "Pitch Tuner が iPhone に登場",
+      "body": "同じチューナーが iPhone と iPad でも使えます。"
+    },
+    "ko": {
+      "title": "Pitch Tuner, 이제 iPhone에서도",
+      "body": "같은 튜너를 이제 iPhone과 iPad에서도 사용하세요."
+    },
+    "pt": {
+      "title": "Pitch Tuner",
+      "body": "O mesmo afinador, agora no iPhone e no iPad."
+    },
+    "ru": {
+      "title": "Pitch Tuner",
+      "body": "Тот же тюнер — теперь на iPhone и iPad."
     }
   }
 }
